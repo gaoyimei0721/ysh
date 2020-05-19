@@ -1,0 +1,106 @@
+a{
+    text-decoration:none;
+}
+/* 导航 */
+.dropdown-toggle{
+    color: #23a257;
+}
+.dropdown-menu li:hover{
+    color: #fff;
+    background-color: #23a257;
+}
+.dropdown-menu li a:hover{
+    color: #fff;
+    background-color: #23a257;
+}
+.dropdown-menu li{
+    border-bottom: 1px solid gainsboro;
+    padding:5px;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    color: #fff;
+    background-color: #23a257;
+}
+/* 增加题目 */
+.btn-primary{
+    background-color: #23a257;
+}
+.btn-default {
+    color: #23a257;
+    background-color: #fff;
+    border-color: #23a257;
+}
+
+/* 表格 */
+table{   
+    width: 100%;
+    table-layout:fixed;
+    text-align: center;
+}
+tr:nth-child(1){
+    background: #ffeb3b;
+    font-weight: bold;
+    /* height: 35px; */
+}
+td{
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    border-bottom:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+}
+.bodyname{
+    /* width:100%; */
+    background-color: #ffeb3b;
+    /* font-weight: bold; */
+}
+.question{
+    text-align: left;
+    padding-left:20px;
+}
+.header td{
+    height: 40px;
+}
+.header2 td{
+    font-weight: bold;
+}
+.editbtn{
+    margin-left: -5px;
+    margin-right:20px;
+
+}
+.delbtn{
+    margin-left:20px;
+}
+/* 模态窗口 */
+
+.modal_title{
+    text-align: center;
+}
+/* 编辑题目 */
+.text{
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.text span{
+    margin-right:20px;
+    margin:auto;
+}
+.text2{
+    margin-left: 10px;
+    /* border:1px solid #23a257; */
+    padding-left:10px;
+    padding-right:10px;
+}
+.modal-body button{
+    margin-right:30px;
+    margin-left:30px;
+}
+/* 删除题目 */
+.modal-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+

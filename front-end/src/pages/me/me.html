@@ -1,0 +1,79 @@
+<!-- <ion-header text-center>
+  <ion-navbar color="white">
+    <ion-title>我的</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="bg">
+    <div class="info">
+      <div class="toux">
+        <img src="{{avatar}}">
+      </div>
+      <div class="name">
+        <p class="mz">
+          {{nickname}}
+        </p>
+        <p class="gq">
+          {{signature}}
+        </p>
+      </div>
+    </div>
+    <ul class="mine">
+      <li (click)="goPage('MydynamicPage')">
+        <ion-icon name="happy"></ion-icon>
+        <p>动态</p>
+      </li>
+      <li (click)="goPage('MyattentionPage')">
+        <ion-icon name="bonfire"></ion-icon>
+        <p>关注</p>
+      </li>
+      <li (click)="goPage('MylikesPage')">
+        <ion-icon name="star-outline"></ion-icon>
+        <p>收藏</p>
+      </li>
+      <li (click)="goPage('MyfansPage')">
+        <ion-icon name="heart-outline"></ion-icon>
+        <p>粉丝</p>
+      </li>
+    </ul>
+    <!-- <ion-list>
+      <ion-item (click)="goPage('UsertailPage')">
+        <ion-icon name="contact" item-start></ion-icon>
+        个人资料
+      </ion-item>
+      <ion-item (click)="goPage('ReportPage')">
+        <ion-icon name="copy" item-start></ion-icon>
+        体质报告
+      </ion-item>
+      <ion-item (click)="goSet()">
+        <ion-icon name="settings" item-start></ion-icon>
+        设置
+      </ion-item>
+    </ion-list> -->
+    <div class="list">
+      <div class="outbox" (click)="goPage('UsertailPage')">
+        <div>
+            <ion-icon name="contact" item-start></ion-icon>
+            <p>个人资料</p>
+        </div>
+        <img src="../../assets/imgs/rightarrow.jpg" alt="">
+      </div>
+      <div class="outbox" (click)="goPage('ReportPage')">
+         <div>
+            <ion-icon name="copy" item-start></ion-icon>
+          <p>体质报告</p>
+         </div>
+          <img src="../../assets/imgs/rightarrow.jpg" alt="">
+      </div>
+      <div class="outbox" (click)="goSet()">
+          <div>
+              <ion-icon name="settings" item-start></ion-icon>
+              <p>设置</p>
+          </div>
+          <img src="../../assets/imgs/rightarrow.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+</ion-content>

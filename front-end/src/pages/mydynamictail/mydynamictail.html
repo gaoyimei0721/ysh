@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>益生活</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="nav" *ngFor="let info of user_info;">
+    <p><img src="{{info.avatar}}"></p>
+    <p>{{info.nickname}}<p>    
+    <p (click)="goShare()" class="p">
+      <ion-icon name="more"></ion-icon>
+    </p>  
+  </div>
+
+  <!-- <ion-slides class="sli" loop autoplay="2000" pager  *ngFor="let img of dynamic;"> -->
+  <ion-slides class="sli" *ngFor="let img of dynamic;">
+    <ion-slide>
+      <img src="{{img.imgs}}">
+    </ion-slide>
+    <!-- <ion-slide>
+      <img src="{{img.imgs}}">
+    </ion-slide>
+    <ion-slide>
+      <img src="{{img.imgs}}">
+    </ion-slide> -->
+  </ion-slides>
+
+  <div class="word" *ngFor="let word of dynamic;">
+    <p>{{word.title}}</p>
+    <p>{{word.content}}</p>
+    <div class="key">
+      <div class="cir"><span>#</span></div>
+      <span class="span">我的动态</span>
+    </div>
+    <div class="span2">
+      {{word.time}}
+      <span (click)="goAssess()" class="text"><ion-icon name="text"></ion-icon></span>
+    </div>     
+  </div>
+
+</ion-content>

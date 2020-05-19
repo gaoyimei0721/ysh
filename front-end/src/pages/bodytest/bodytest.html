@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>中医体质测试</ion-title>
+    <ion-buttons end (click)="goShare()">
+      <button ion-button icon-only>
+        <ion-icon name="share" color="primary"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="banner">
+    <div class="top">
+      <img src="../assets/imgs/doctor.png"/>
+    </div>
+    <div class="tip">
+      <p>请根据最近三个月你身体的情况和感觉，回答以下
+        问题，本测试不适用于孕妇。
+      </p>
+    </div>
+  </div>
+  <div class="box-question">
+    <ul class="question-ul">
+      <li *ngFor="let item of question;let i=index" class="list">
+        <div class="question-content">{{item.qid}}.{{item.question}}</div>
+        <div *ngFor="let item of key;let j=index" class="key" [class.change]="isActive1[i]==j" (click)="goChange(i,j)">
+            {{item}}
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="summit-button" (click)="goReport()">
+    <button ion-button round>提交测试</button>
+  </div>
+  <!-- (click)="goCalculate()" -->
+</ion-content>

@@ -1,0 +1,75 @@
+.list{
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.list li{
+    float: left;
+    width: 10%;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.first{
+    border-bottom: #23a257 3px solid;
+}
+.detail{
+    width: 100%;
+    float: left;
+}
+table{   
+    width: 100%;
+    table-layout:fixed;
+}
+th{
+    text-align: center;
+    background-color: #ffeb3b
+}
+td{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+    /* border:1px solid gray; */
+}
+tr:nth-of-type(odd){
+    background-color: rgba(200, 243, 174, 0.671);
+}
+tr:nth-of-type(even){
+    background-color: #eee;
+}
+
+.id{
+    width: 6%;
+}
+.faid{
+    width: 8%;
+}
+.timu{
+    width: 17%;
+}
+.time{
+    width: 15%;
+}
+.img{
+    width: 13%;
+}
+.class{
+    width: 7%;
+}
+.option{
+    width: 7%;
+}
+.bid{
+    width: 10%;
+}
+.sex{
+    width: 6%;
+}
+.nickname{
+    width: 10%;
+}
+.city{
+    width: 10%;
+}

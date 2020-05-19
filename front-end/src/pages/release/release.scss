@@ -1,0 +1,41 @@
+page-release {
+    .button-inner{
+        color: rgb(35,162,87);
+    }
+    .toolbar-title-md{
+        padding-left: 35%;
+    }
+    ion-content{
+        .div1{
+            .class{
+                label,span{
+                    color: rgb(35,162,87);
+                }
+            }           
+            .img{
+                border:1px solid #e0dbdb;
+                border-radius: 5px;
+                width: 100px;
+                height:100px;
+                margin: 10px;
+                img{
+                    border-radius: 5px;
+                    width: 100px;
+                    height:98px;
+                }
+            }            
+           .word{
+                margin: 10px;
+                input{
+                    display: block;
+
+                }
+                textarea{
+                    width: 100%;
+                    height:150px;
+                    border: none;
+                }
+           }
+        }    
+    }
+}

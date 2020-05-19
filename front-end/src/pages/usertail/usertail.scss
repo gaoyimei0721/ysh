@@ -1,0 +1,19 @@
+page-usertail {
+    .toolbar-title-md{
+        padding-left: 30%;
+    }
+    ion-content{
+        background-color:#e2e2e2;
+        ion-label{
+            color: black!important;
+        }
+        span{
+            color: gray;
+            .ipt{
+                border:0!important;
+                text-align: right;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

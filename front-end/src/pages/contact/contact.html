@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      动态
+    </ion-title>
+    <ion-buttons end (click)="goRelease()">
+      <button ion-button icon-only>
+        <ion-icon name="add" color="primary"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="search" (click)="goSearch()">
+    <ion-icon name="search"></ion-icon>
+    <input type="text" placeholder="搜索">
+  </div>
+  <ul class="kapian">
+    <li *ngFor="let item of content;let i=index" (click)="goContactail(i)">
+      <div class="wrap">
+        <div class="img">
+          <img src="{{item.imgs}}">
+        </div>
+        <div class="word">
+          <p>{{item.content}}</p>
+        </div>
+        <div class="user">
+          <img src="{{avatar[dids[i]]}}">
+          <p>{{nickname[i]}}</p>
+          <div class="icon">
+            <p>
+              <ion-icon name="heart-outline"></ion-icon>
+            </p>
+            <p>{{love[i]}}</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</ion-content>

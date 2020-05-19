@@ -1,0 +1,36 @@
+page-register {
+    ion-content{
+        background-image: url(../assets/imgs/reg_bg.jpg);
+        background-size: cover;   
+        .box{
+            .regi{
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    color:#2a5a3d;
+                    margin-bottom: 20px;
+                }   
+            }
+            text-align: center;
+            width: 280px;
+            margin:0 auto;
+            position: relative;
+            top: 80px;
+            ion-input{
+                border:1px solid #cccccc;
+                background-color: white;
+                margin-bottom:10px;
+            }
+            button{
+                font-size:17px;
+                font-weight: bolder;
+                color:white!important;
+                background: #23a257;
+            }
+            p{
+                text-align: center;
+                color:#2a5a3d;
+            }
+        }
+    }
+}

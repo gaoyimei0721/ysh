@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>编辑计划</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="newplan">
+    <div class="pic">
+      <svg class="iconi" aria-hidden="true">
+        <use xlink:href="#icon-shuiguo"></use>
+      </svg>
+    </div>
+    <p id="txt">添加计划</p>
+    <p class="pid">0</p>
+  </div>
+
+  <div class="save">
+    <p (click)="quxiao()">取消选择</p>
+    <p (click)="save()">保 存</p>
+  </div>
+
+  <div class="box">
+    <div class="row">
+      <div class="out" *ngFor="let item of plan;" (click)="changePlan(item.plancolor,item.plantxt,item.pid)">
+        <div class="plan {{item.plancolor}}">
+          <svg class="iconi" aria-hidden="true">
+            <use xlink:href="#icon-shuiguo"></use>
+          </svg>
+        </div>
+        <p>{{item.plantxt}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

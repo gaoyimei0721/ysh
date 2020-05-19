@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>个人资料</ion-title>
+    <ion-buttons end (click)='save()'>
+      <button ion-button icon-only color="primary">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div id="one" style="width:100%; height:120px; border:1px solid gainsboro;">
+    <div style="float:left; padding: 50px 0 0 20px">
+      <h3>头像</h3>
+    </div>
+    <div id="img" style="padding: 10px 20px 0 0;">
+    <button (click)="presentActionSheet()" style="float:right; padding:0 20px 0 0; width:100px; height:100px">
+      <ion-img width="100px" height="100px" src="{{avatar}}"></ion-img>
+    </button>
+    </div>
+  </div>
+  <ion-list>
+    <ion-item>
+      昵称
+      <span item-end><input type="text" name="nickname" placeholder="{{nickname}}" class="ipt" [(ngModel)]='nickname'></span>
+    </ion-item>
+    <ion-item>
+      个性签名<span item-end><input type="text" name="nickname" placeholder="{{signature}}" class="ipt" [(ngModel)]='signature'></span>
+    </ion-item>
+    <ion-item (click)='presentSex()'>
+      性别<span item-end>{{sex}}</span>
+    </ion-item>
+    <ion-item (click)='presentBirth()'>
+      生日<span item-end>{{birth}}</span>
+    </ion-item>
+    <ion-item>
+      <ion-label>所在地区</ion-label>
+      <ion-multi-picker item-content [placeholder]='city' [cancelText]="cancel" [doneText]="done" [multiPickerColumns]="listData" [(ngModel)]='bcity'></ion-multi-picker>
+    </ion-item>
+    <ion-item>
+      注册手机号<span item-end><input type="text" name="nickname" placeholder="{{account}}" class="ipt" [(ngModel)]='account'></span>
+    </ion-item>
+  </ion-list>
+</ion-content>
+x

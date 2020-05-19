@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>设置</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item (click)='goShare()'>
+      分享该应用
+    </button> 
+    <button ion-item (click)='goAbout()'>
+        关于益生活
+    </button>
+    <button ion-item>
+        评价应用
+    </button>
+    <button ion-item>
+        清除缓存
+    </button>
+  </ion-list>
+  <button ion-button  block (click)='goLogin()' class='btn' [ngClass]="{'show':flag}">立 即 登 录</button>
+  <button ion-button  block (click)='goLogin()' class='btn' [ngClass]="{'show':!flag}">退出当前账号</button>
+      
+    
+</ion-content>

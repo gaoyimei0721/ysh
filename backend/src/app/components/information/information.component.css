@@ -1,0 +1,56 @@
+.search{
+    height: 40px;
+}
+#text{
+    width: 200px;
+}
+
+.reload{
+    background-color: #23a257;
+    color: white;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.leftbox p{
+    line-height: 30px;
+}
+
+table{
+    width: 100%;
+}
+td{
+    text-align: center;
+}
+tr:nth-of-type(odd){
+    background-color: rgba(200, 243, 174, 0.671);
+}
+tr:nth-of-type(even){
+    background-color: #eee;
+}
+th{
+    text-align: center;
+    background-color: #ffeb3b;
+}
+a{
+    color: green;
+    /* text-decoration: underline; */
+}
+a:hover{
+    color: green;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <div class="logo">
+    <img src="../../../assets/imgs/aboutlogo.png" alt="">
+    <p>益&nbsp;生&nbsp;活</p>
+  </div>
+  <ul class="outlist">
+      <li class="hh1">
+        <a (click)="choose(1)" [routerLink]='["/home"]'>首页</a>
+      </li>
+
+      <li>
+        <span (click)="show('systemlist')">系统管理</span><span class="glyphicon glyphicon-menu-down"></span>
+        <ul class="systemlist">
+          <li class="hh2">
+            <a (click)="choose(2)" [routerLink]='["/question"]'>体质检测题库</a>
+          </li>
+          <li class="hh3">
+            <a (click)="choose(3)" [routerLink]='["/recommend"]'>系统推荐</a>
+          </li>
+          <li class="hh4">
+            <a (click)="choose(4)" [routerLink]='["/shoulds"]'>宜忌</a>
+          </li>
+          <li class="hh5">
+            <a (click)="choose(5)" [routerLink]='["/feedback"]'>意见反馈</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <span (click)="show('userlist')">用户管理</span><span class="glyphicon glyphicon-menu-down"></span>
+        <ul class="userlist">
+          <li class="hh6">
+            <a (click)="choose(6)" [routerLink]='["/information"]'>个人信息</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="hh7">
+        <a [routerLink]='["/admins"]' (click)="choose(7)">管理员管理</a>
+      </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+page-welcome {
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin-bottom: 20px;
+        background: yellow;
+    }
+    #s1{
+        background: url(../assets/imgs/start/start1.png);
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+    }
+    #s2{
+        background: url(../assets/imgs/start/wreport.png);
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+    }
+    #s3{
+        background: url(../assets/imgs/start/wplan.png);
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+    }
+
+    ion-slide{
+        p{
+            margin-top: 120%;
+            padding: 5%;
+            color: white;
+            font-size: 1.3em;
+            text-shadow: 5px 5px 5px #555;
+        }
+    }
+}

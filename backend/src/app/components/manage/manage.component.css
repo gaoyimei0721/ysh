@@ -1,0 +1,18 @@
+.edit p{
+    margin: 15px;
+}
+.edit p input{
+    padding: 5px;
+    border-radius: 5px;
+}
+.edit p select{
+    border-radius: 3px;
+    padding: 5px;
+}
+.buttons{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
